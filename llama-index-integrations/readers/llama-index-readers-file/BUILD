@@ -1,4 +1,1 @@
-poetry_requirements(
-    name="poetry",
-    module_mapping={"fpdf2": ["fpdf"]}
-)
+poetry_requirements(name="poetry", module_mapping={"fpdf2": ["fpdf"]})

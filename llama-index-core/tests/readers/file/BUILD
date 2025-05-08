@@ -8,10 +8,7 @@ python_tests(
     ],
 )
 
-files(
-    name="config",
-    sources=["data/**/*"]
-)
+files(name="config", sources=["data/**/*"])
 
 python_requirement(
     name="llama-index-readers-file",

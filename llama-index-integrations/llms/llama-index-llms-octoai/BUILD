@@ -1,4 +1,1 @@
-poetry_requirements(
-    name="poetry",
-    module_mapping={"octoai-sdk": ["octoai"]}
-)
+poetry_requirements(name="poetry", module_mapping={"octoai-sdk": ["octoai"]})

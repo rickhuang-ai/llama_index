@@ -1,3 +1,3 @@
 python_sources(
-  dependencies = ["./templates"],
+    dependencies=["./templates"],
 )

@@ -1,3 +1,1 @@
-python_tests(
-  dependencies=["./cassettes"]
-)
+python_tests(dependencies=["./cassettes"])

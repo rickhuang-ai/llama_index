@@ -1,4 +1,1 @@
-poetry_requirements(
-    name="poetry",
-    module_mapping={"newsapi-python": ["newsapi"]}
-)
+poetry_requirements(name="poetry", module_mapping={"newsapi-python": ["newsapi"]})

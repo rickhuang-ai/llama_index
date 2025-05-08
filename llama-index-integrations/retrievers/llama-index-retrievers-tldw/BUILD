@@ -1,3 +1,1 @@
-poetry_requirements(
-    name="poetry"
-)
+poetry_requirements(name="poetry")

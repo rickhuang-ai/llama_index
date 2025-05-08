@@ -1,4 +1,1 @@
-poetry_requirements(
-    name="poetry",
-    module_mapping={"vcrpy": ["vcr"]}
-)
+poetry_requirements(name="poetry", module_mapping={"vcrpy": ["vcr"]})
