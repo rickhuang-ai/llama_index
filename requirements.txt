@@ -1,0 +1,8 @@
+markdown
+python-docx
+markdown2
+rich
+beautifulsoup4
+pyth
+ray[default]
+gym
