@@ -5,6 +5,7 @@ from markdown2 import markdown as markdown2_html
 from rich.console import Console
 from rich.markdown import Markdown
 import ray
+import json
 
 # For RTF conversion
 from pyth.plugins.rtf15.reader import Rtf15Reader
@@ -119,3 +120,29 @@ if __name__ == "__main__":
         resources_per_trial={"cpu": 1}
     )
     print("Best RL trial:", analysis.get_best_trial("reward", mode="max"))
+
+# --- Langraph Integration: Load and use langraph.json for workflow configuration ---
+LANGRAPH_CONFIG_PATH = os.path.join(os.path.dirname(__file__), 'langraph.json')
+if os.path.exists(LANGRAPH_CONFIG_PATH):
+    with open(LANGRAPH_CONFIG_PATH, 'r') as f:
+        langraph_config = json.load(f)
+    print("[Langraph] Loaded configuration:")
+    print(json.dumps(langraph_config, indent=2))
+else:
+    langraph_config = None
+    print("[Langraph] No configuration file found.")
+
+# Example: Use Langraph config to control workflow (stub)
+def run_langraph_workflow(input_data, config=langraph_config):
+    if not config:
+        print("No Langraph config loaded. Skipping advanced workflow.")
+        return None
+    # Example: Use config to set max agents/tools, enable visualization, etc.
+    print(f"[Langraph] Running workflow with up to {config['default_settings']['max_agents']} agents and {config['default_settings']['max_tools']} tools.")
+    # ... insert Langraph workflow logic here ...
+    return "[Langraph] Workflow completed (stub)"
+
+# Example usage
+if __name__ == "__main__":
+    # ...existing code...
+    run_langraph_workflow(input_data={"example": "data"})

@@ -1,0 +1,27 @@
+{
+  "project": "llama_index",
+  "description": "Langraph integration and configuration for advanced agent workflows, graph-based reasoning, and tool orchestration.",
+  "capabilities": [
+    "graph-based agent orchestration",
+    "multi-agent collaboration",
+    "tool chaining and workflow composition",
+    "memory and context management",
+    "integration with LlamaIndex and LangChain",
+    "custom tool registration",
+    "dynamic workflow execution",
+    "visualization of agent/tool graphs"
+  ],
+  "default_settings": {
+    "max_agents": 8,
+    "max_tools": 16,
+    "enable_visualization": true,
+    "logging_level": "INFO",
+    "memory_backend": "local",
+    "workflow_timeout_sec": 600
+  },
+  "examples": [
+    "rag_workflow_with_memory",
+    "multi_tool_agent_graph",
+    "custom_tool_registration"
+  ]
+}
